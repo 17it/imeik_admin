@@ -1,5 +1,5 @@
 <!--
- * @Author: Vben
+ * @Author: Imeik
  * @Description: Multi-language switching component
 -->
 <template>
@@ -8,7 +8,7 @@
     :trigger="['click']"
     :dropMenuList="localeList"
     :selectedKeys="selectedKeys"
-    @menuEvent="handleMenuEvent"
+    @menu-event="handleMenuEvent"
     overlayClassName="app-locale-picker-overlay"
   >
     <span class="cursor-pointer flex items-center">

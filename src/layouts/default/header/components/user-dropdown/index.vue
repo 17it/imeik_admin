@@ -11,13 +11,13 @@
 
     <template #overlay>
       <Menu @click="handleMenuClick">
-        <MenuItem
-          key="doc"
-          :text="t('layout.header.dropdownItemDoc')"
-          icon="ion:document-text-outline"
-          v-if="getShowDoc"
-        />
-        <MenuDivider v-if="getShowDoc" />
+        <!--<MenuItem-->
+        <!--  key="doc"-->
+        <!--  :text="t('layout.header.dropdownItemDoc')"-->
+        <!--  icon="ion:document-text-outline"-->
+        <!--  v-if="getShowDoc"-->
+        <!--/>-->
+        <!--<MenuDivider v-if="getShowDoc" />-->
         <MenuItem
           v-if="getUseLockPage"
           key="lock"
@@ -62,7 +62,7 @@
       Dropdown,
       Menu,
       MenuItem: createAsyncComponent(() => import('./DropMenuItem.vue')),
-      MenuDivider: Menu.Divider,
+      // MenuDivider: Menu.Divider,
       LockAction: createAsyncComponent(() => import('../lock/LockModal.vue')),
     },
     props: {

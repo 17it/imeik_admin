@@ -8,7 +8,7 @@ const iframe: AppRouteModule = {
   path: '/frame',
   name: 'Frame',
   component: LAYOUT,
-  redirect: '/frame/doc',
+  redirect: '/frame/antv',
   meta: {
     orderNo: 1000,
     icon: 'ion:tv-outline',
@@ -16,15 +16,15 @@ const iframe: AppRouteModule = {
   },
 
   children: [
-    {
-      path: 'doc',
-      name: 'Doc',
-      component: IFrame,
-      meta: {
-        frameSrc: 'https://vvbin.cn/doc-next/',
-        title: t('routes.demo.iframe.doc'),
-      },
-    },
+    // {
+    //   path: 'doc',
+    //   name: 'Doc',
+    //   component: IFrame,
+    //   meta: {
+    //     frameSrc: 'https://vvbin.cn/doc-next/',
+    //     title: t('routes.demo.iframe.doc'),
+    //   },
+    // },
     {
       path: 'antv',
       name: 'Antv',
@@ -34,14 +34,14 @@ const iframe: AppRouteModule = {
         title: t('routes.demo.iframe.antv'),
       },
     },
-    {
-      path: 'https://vvbin.cn/doc-next/',
-      name: 'DocExternal',
-      component: IFrame,
-      meta: {
-        title: t('routes.demo.iframe.docExternal'),
-      },
-    },
+    // {
+    //   path: 'https://vvbin.cn/doc-next/',
+    //   name: 'DocExternal',
+    //   component: IFrame,
+    //   meta: {
+    //     title: t('routes.demo.iframe.docExternal'),
+    //   },
+    // },
   ],
 };
 
